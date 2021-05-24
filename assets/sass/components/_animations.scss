@@ -1,0 +1,29 @@
+.card__animated{
+    .svg__chevron{
+        animation: loop 5s infinite;
+    }
+    .card__gear{
+        animation: rotate 5s linear infinite;
+        transform-origin: 79% 80%;
+    }
+}
+
+@keyframes loop {
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(29%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg)
+    }
+}
